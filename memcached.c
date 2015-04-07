@@ -48,6 +48,9 @@
 #include <sysexits.h>
 #include <stddef.h>
 
+#include "libasyncos.h"
+#include "libasyncos-util.h"
+
 /* FreeBSD 4.x doesn't have IOV_MAX exposed. */
 #ifndef IOV_MAX
 #if defined(__FreeBSD__) || defined(__APPLE__)
@@ -5017,6 +5020,10 @@ static bool sanitycheck(void) {
 }
 
 int main (int argc, char **argv) {
+	//jie start
+	asyncos_init();
+	asyncos_start();
+	//jie end
     int c;
     bool lock_memory = false;
     bool do_daemonize = false;
