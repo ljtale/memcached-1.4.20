@@ -3956,7 +3956,12 @@ static enum transmit_result transmit(conn *c) {
         ssize_t res;
         struct msghdr *m = &c->msglist[c->msgcurr];
 
-        res = sendmsg(c->sfd, m, 0);
+	//jie start
+	int sd = issue(SYS_sendmsg, c->sfd, m, 0);
+	res = complete(sd);
+        //res = sendmsg(c->sfd, m, 0);
+	//jie end
+	
         if (res > 0) {
             pthread_mutex_lock(&c->thread->stats.mutex);
             c->thread->stats.bytes_written += res;
@@ -4175,7 +4180,11 @@ static void drive_machine(conn *c) {
             }
 
             /*  now try reading from the socket */
-            res = read(c->sfd, c->ritem, c->rlbytes);
+	//jie start
+	int rd = issue(SYS_read, c->sfd, c->ritem, c->rlbytes);
+	res = complete(rd);
+        //    res = read(c->sfd, c->ritem, c->rlbytes);
+	//jie end
             if (res > 0) {
                 pthread_mutex_lock(&c->thread->stats.mutex);
                 c->thread->stats.bytes_read += res;
@@ -5020,10 +5029,7 @@ static bool sanitycheck(void) {
 }
 
 int main (int argc, char **argv) {
-	//jie start
-	asyncos_init();
-	asyncos_start();
-	//jie end
+
     int c;
     bool lock_memory = false;
     bool do_daemonize = false;
@@ -5073,7 +5079,9 @@ int main (int argc, char **argv) {
         [LRU_CRAWLER_TOCRAWL] = "lru_crawler_tocrawl",
         NULL
     };
-
+	//jie start
+	/* check libeven version here, requires 1.3 or newer version*/
+	//jie end
     if (!sanitycheck()) {
         return EX_OSERR;
     }
@@ -5408,7 +5416,6 @@ int main (int argc, char **argv) {
         fprintf(stderr, "Failed to initialize hash_algorithm!\n");
         exit(EX_USAGE);
     }
-
     /*
      * Use one workerthread to serve each UDP port if the user specified
      * multiple ports
@@ -5506,12 +5513,17 @@ int main (int argc, char **argv) {
         if (sigignore(SIGHUP) == -1) {
             perror("Failed to ignore SIGHUP");
         }
-        if (daemonize(maxcore, settings.verbose) == -1) {
+	//jie start
+	/* daemonize at this point
+	 * close all open file descriptors, change working director to "/" because maxcore is 0
+	 * change stdin, stdout, stderr to /dev/null because settings.verbose is 0
+	 * current process calls fork(), forking only the main thread, then parent process calls exit() */
+	//jie end
+        if (daemonize(maxcore, 2/*settings.verbose*/) == -1) {
             fprintf(stderr, "failed to daemon() in order to daemonize\n");
             exit(EXIT_FAILURE);
         }
     }
-
     /* lock paged memory if needed */
     if (lock_memory) {
 #ifdef HAVE_MLOCKALL
@@ -5524,6 +5536,10 @@ int main (int argc, char **argv) {
         fprintf(stderr, "warning: -k invalid, mlockall() not supported on this platform.  proceeding without.\n");
 #endif
     }
+	//jie start
+	asyncos_init();
+	asyncos_start();
+	//jie end
 
     /* initialize main thread libevent instance */
     main_base = event_init();
