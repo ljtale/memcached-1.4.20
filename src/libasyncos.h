@@ -5,7 +5,7 @@
 #include <sys/syscall.h>
 
 #ifndef NCPUS
-#define NCPUS 4
+#define NCPUS 3
 #endif
 
 //#define MY_PRINT

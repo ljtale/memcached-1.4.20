@@ -20,11 +20,11 @@
 #define HAVE_LOCAL
 
 //#define NSLOTS (NCPUS-1) /* 1 per core? */
-#define NSLOTS 32
+#define NSLOTS 3
 #define CACHE_LINE_SZ 64 /* XXX: machine dependent */
 #if defined(HAVE_LOCAL)
 //# define LSLOTS (16-NSLOTS)
-#define LSLOTS (128-NSLOTS)
+#define LSLOTS (6-NSLOTS)
 #else
 # define LSLOTS (0)
 #endif

@@ -184,6 +184,7 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
  //jie end
   while (max_n_read)
     {
+	my_fprintf(stderr,"sparse_copy: going into while loop...\n");
       bool make_hole = false;
 	/*issue write for the previous read*/
 	n_read = complete(rd);
