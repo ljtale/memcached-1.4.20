@@ -87,7 +87,7 @@ asyncos_pin(pthread_t thread, int cpu)
 	ret = pthread_setaffinity_np(thread, sizeof(cpuset), &cpuset);
 	if (ret)
 		errno = ret;
-	fprintf(stderr,"asyncos_pin: thread %ld pinning returns %d.\n",thread, ret);
+	my_fprintf(stderr,"asyncos_pin: thread %ld pinning returns %d.\n",thread, ret);
 	return ret;
 }
 
@@ -179,7 +179,7 @@ static void *asyncos_mainloop(void *cpuID){
 	assert(!asyncos_pin_wait((unsigned long)cpuID+1));
 	unsigned long cpu = (unsigned long)cpuID;
 	pthread_barrier_wait(&thread_bar);
-	fprintf(stderr,"asyncos_mainloop: cpuID %lu released..\n",(unsigned long)cpuID);
+	my_fprintf(stderr,"asyncos_mainloop: cpuID %lu released..\n",(unsigned long)cpuID);
 	for(;;){
 		int slot;
 		int wait;
@@ -226,7 +226,7 @@ asyncos_start(void)
 
 	/* release the worker threads */
 	pthread_barrier_wait(&thread_bar);
-	fprintf(stderr,"asyncos_start: main thread released...\n");
+	my_fprintf(stderr,"asyncos_start: main thread released...\n");
 	/* wait for them to get running */
 	for (i = 0; i < NCPUS-1; i++) {
 		do {
@@ -268,7 +268,7 @@ asyncos_init(void)
 			perror("libasyncos: pthread_setaffinity() failed");
 			exit(1);
 		}
-		printf("asyncos_init: thread %ld pinned successfully\n",asyncos_thread[i].thread);
+		my_fprintf(stderr, "asyncos_init: thread %ld pinned successfully\n",asyncos_thread[i].thread);
 	}
 
 	/* pin ourselves */

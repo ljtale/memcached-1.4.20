@@ -176,8 +176,8 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
 //  char *buf1 = (char *)xmalloc(MIN(max_n_read, buf_size));
   char *buf1 = buf;
   char *buf2 = (char *)xmalloc(MIN(max_n_read, buf_size));
-  fprintf(stderr,"sparse_copy: original buf: 0x%x\n", buf);
-  fprintf(stderr,"sparse_copy: allocating two bufs, buf1: 0x%x, buf2: 0x%x\n", buf1, buf2);
+  my_fprintf(stderr,"sparse_copy: original buf: 0x%x\n", buf);
+  my_fprintf(stderr,"sparse_copy: allocating two bufs, buf1: 0x%x, buf2: 0x%x\n", buf1, buf2);
   ssize_t n_read = 0;
   ssize_t n_write = 0;  
   rd = issue(SYS_read, src_fd, buf1, MIN(max_n_read, buf_size));
@@ -187,7 +187,7 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
       bool make_hole = false;
 	/*issue write for the previous read*/
 	n_read = complete(rd);
-	fprintf(stderr,"sparse_copy: reading....size: %x to buf: 0x%x\n", n_read, buf1);
+	my_fprintf(stderr,"sparse_copy: reading....size: %x to buf: 0x%x\n", n_read, buf1);
 	/*what if this is the last valid read???*/
 //      ssize_t n_read = read (src_fd, buf, MIN (max_n_read, buf_size));
       if (n_read < 0)
@@ -205,7 +205,7 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
       if (make_holes)
         {
 	//jie start
-	fprintf(stderr,"sparse_copy: seems make_holes is true....\n");
+	my_fprintf(stderr,"sparse_copy: seems make_holes is true....\n");
 	//jie end
           /* Sentinel required by is_nul().  */
           buf[n_read] = '\1';
@@ -243,7 +243,7 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
              	 error (0, errno, _("error writing %s"), quote (dst_name));
               	 return false;
             	}
-		fprintf(stderr,"sparse_copy: writing....size: %x from buf: 0x%x \n", n_write, buf2);
+		my_fprintf(stderr,"sparse_copy: writing....size: %x from buf: 0x%x \n", n_write, buf2);
 		rd = issue(SYS_read, src_fd, buf2, MIN(max_n_read, buf_size));
           /* It is tempting to return early here upon a short read from a
              regular file.  That would save the final read syscall for each
@@ -258,12 +258,12 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
       }
       *last_write_made_hole = make_hole;
       /* exchange buf1 and buf2*/
-	fprintf(stderr,"sparse_copy: buf1: 0x%x, buf2:0x%x\n", buf1,buf2);
-	fprintf(stderr,"sparse_copy: exchange...\n");
+	my_fprintf(stderr,"sparse_copy: buf1: 0x%x, buf2:0x%x\n", buf1,buf2);
+	my_fprintf(stderr,"sparse_copy: exchange...\n");
 	temp = buf1;
 	buf1 = buf2;
 	buf2 = temp;
-	fprintf(stderr,"sparse_copy: buf1: 0x%x, buf2:0x%x\n", buf1,buf2);
+	my_fprintf(stderr,"sparse_copy: buf1: 0x%x, buf2:0x%x\n", buf1,buf2);
     }
   /* issue the last write on buf1, rd must not be negative
    * the while loop is broken when the last read reads 0 byte, so we
@@ -278,7 +278,7 @@ sparse_copy (int src_fd, int dest_fd, char *buf, size_t buf_size,
 	 error (0, errno, _("error writing %s"), quote (dst_name));
 	 return false;
   }
-  fprintf(stderr,"sparse_copy: writing....size: %x from buf: 0x%x \n", n_write, buf1);
+  my_fprintf(stderr,"sparse_copy: writing....size: %x from buf: 0x%x \n", n_write, buf1);
   return true;
 }
 

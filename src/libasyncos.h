@@ -8,6 +8,13 @@
 #define NCPUS 4
 #endif
 
+//#define MY_PRINT
+#ifdef MY_PRINT
+#define my_fprintf(fmt, args...)  fprintf(fmt, ##args)
+#else
+#define my_fprintf(fmt, args...)
+#endif
+
 /* For debugging: cause issue() to complete synchronously. complete() becomes no-op */
 /* #define MAKE_SYNC */
 
