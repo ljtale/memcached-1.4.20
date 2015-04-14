@@ -1,0 +1,570 @@
+test hot disk cache with block size: 512k
+copying file: file-1-M
+do copy with libAsyncOS, with hot disk cache
+tt: 1007 microseconds
+tt: 1038 microseconds
+tt: 1029 microseconds
+tt: 944 microseconds
+tt: 934 microseconds
+do the original copy, with hot disk cache
+tt: 855 microseconds
+tt: 847 microseconds
+tt: 869 microseconds
+tt: 821 microseconds
+tt: 827 microseconds
+
+
+copying file: file-1-k
+do copy with libAsyncOS, with hot disk cache
+tt: 471 microseconds
+tt: 511 microseconds
+tt: 531 microseconds
+tt: 523 microseconds
+tt: 467 microseconds
+do the original copy, with hot disk cache
+tt: 383 microseconds
+tt: 385 microseconds
+tt: 361 microseconds
+tt: 365 microseconds
+tt: 364 microseconds
+
+
+copying file: file-128-M
+do copy with libAsyncOS, with hot disk cache
+tt: 37460 microseconds
+tt: 37434 microseconds
+tt: 37538 microseconds
+tt: 37468 microseconds
+tt: 37514 microseconds
+do the original copy, with hot disk cache
+tt: 50541 microseconds
+tt: 50510 microseconds
+tt: 50470 microseconds
+tt: 50518 microseconds
+tt: 50552 microseconds
+
+
+copying file: file-128-k
+do copy with libAsyncOS, with hot disk cache
+tt: 592 microseconds
+tt: 584 microseconds
+tt: 583 microseconds
+tt: 580 microseconds
+tt: 605 microseconds
+do the original copy, with hot disk cache
+tt: 454 microseconds
+tt: 490 microseconds
+tt: 461 microseconds
+tt: 447 microseconds
+tt: 440 microseconds
+
+
+copying file: file-16-M
+do copy with libAsyncOS, with hot disk cache
+tt: 5395 microseconds
+tt: 5438 microseconds
+tt: 5433 microseconds
+tt: 5423 microseconds
+tt: 5481 microseconds
+do the original copy, with hot disk cache
+tt: 6836 microseconds
+tt: 6865 microseconds
+tt: 6865 microseconds
+tt: 6880 microseconds
+tt: 6846 microseconds
+
+
+copying file: file-16-k
+do copy with libAsyncOS, with hot disk cache
+tt: 563 microseconds
+tt: 555 microseconds
+tt: 516 microseconds
+tt: 516 microseconds
+tt: 515 microseconds
+do the original copy, with hot disk cache
+tt: 370 microseconds
+tt: 344 microseconds
+tt: 346 microseconds
+tt: 377 microseconds
+tt: 393 microseconds
+
+
+copying file: file-2-M
+do copy with libAsyncOS, with hot disk cache
+tt: 1308 microseconds
+tt: 1283 microseconds
+tt: 1345 microseconds
+tt: 1260 microseconds
+tt: 1228 microseconds
+do the original copy, with hot disk cache
+tt: 1301 microseconds
+tt: 1222 microseconds
+tt: 1183 microseconds
+tt: 1167 microseconds
+tt: 1141 microseconds
+
+
+copying file: file-2-k
+do copy with libAsyncOS, with hot disk cache
+tt: 436 microseconds
+tt: 426 microseconds
+tt: 429 microseconds
+tt: 431 microseconds
+tt: 427 microseconds
+do the original copy, with hot disk cache
+tt: 346 microseconds
+tt: 351 microseconds
+tt: 339 microseconds
+tt: 341 microseconds
+tt: 348 microseconds
+
+
+copying file: file-256-M
+do copy with libAsyncOS, with hot disk cache
+tt: 73471 microseconds
+tt: 73463 microseconds
+tt: 73352 microseconds
+tt: 73644 microseconds
+tt: 73453 microseconds
+do the original copy, with hot disk cache
+tt: 100140 microseconds
+tt: 99753 microseconds
+tt: 99825 microseconds
+tt: 99809 microseconds
+tt: 99809 microseconds
+
+
+copying file: file-256-k
+do copy with libAsyncOS, with hot disk cache
+tt: 615 microseconds
+tt: 599 microseconds
+tt: 578 microseconds
+tt: 596 microseconds
+tt: 581 microseconds
+do the original copy, with hot disk cache
+tt: 530 microseconds
+tt: 526 microseconds
+tt: 529 microseconds
+tt: 536 microseconds
+tt: 538 microseconds
+
+
+copying file: file-32-M
+do copy with libAsyncOS, with hot disk cache
+tt: 10000 microseconds
+tt: 10001 microseconds
+tt: 9949 microseconds
+tt: 9999 microseconds
+tt: 9912 microseconds
+do the original copy, with hot disk cache
+tt: 13117 microseconds
+tt: 13145 microseconds
+tt: 13145 microseconds
+tt: 13144 microseconds
+tt: 13149 microseconds
+
+
+copying file: file-32-k
+do copy with libAsyncOS, with hot disk cache
+tt: 527 microseconds
+tt: 525 microseconds
+tt: 456 microseconds
+tt: 456 microseconds
+tt: 466 microseconds
+do the original copy, with hot disk cache
+tt: 370 microseconds
+tt: 371 microseconds
+tt: 362 microseconds
+tt: 369 microseconds
+tt: 366 microseconds
+
+
+copying file: file-4-M
+do copy with libAsyncOS, with hot disk cache
+tt: 1901 microseconds
+tt: 1847 microseconds
+tt: 1931 microseconds
+tt: 1877 microseconds
+tt: 1850 microseconds
+do the original copy, with hot disk cache
+tt: 2103 microseconds
+tt: 2109 microseconds
+tt: 2070 microseconds
+tt: 2113 microseconds
+tt: 2098 microseconds
+
+
+copying file: file-4-k
+do copy with libAsyncOS, with hot disk cache
+tt: 446 microseconds
+tt: 467 microseconds
+tt: 441 microseconds
+tt: 424 microseconds
+tt: 465 microseconds
+do the original copy, with hot disk cache
+tt: 355 microseconds
+tt: 341 microseconds
+tt: 357 microseconds
+tt: 377 microseconds
+tt: 379 microseconds
+
+
+copying file: file-512-M
+do copy with libAsyncOS, with hot disk cache
+tt: 147118 microseconds
+tt: 146615 microseconds
+tt: 146424 microseconds
+tt: 147112 microseconds
+tt: 146327 microseconds
+do the original copy, with hot disk cache
+tt: 198578 microseconds
+tt: 198768 microseconds
+tt: 198627 microseconds
+tt: 199175 microseconds
+tt: 198694 microseconds
+
+
+copying file: file-512-k
+do copy with libAsyncOS, with hot disk cache
+tt: 879 microseconds
+tt: 760 microseconds
+tt: 753 microseconds
+tt: 802 microseconds
+tt: 806 microseconds
+do the original copy, with hot disk cache
+tt: 720 microseconds
+tt: 605 microseconds
+tt: 601 microseconds
+tt: 655 microseconds
+tt: 640 microseconds
+
+
+copying file: file-64-M
+do copy with libAsyncOS, with hot disk cache
+tt: 19285 microseconds
+tt: 19239 microseconds
+tt: 19355 microseconds
+tt: 19289 microseconds
+tt: 19319 microseconds
+do the original copy, with hot disk cache
+tt: 25791 microseconds
+tt: 25749 microseconds
+tt: 25722 microseconds
+tt: 25734 microseconds
+tt: 25768 microseconds
+
+
+copying file: file-64-k
+do copy with libAsyncOS, with hot disk cache
+tt: 559 microseconds
+tt: 527 microseconds
+tt: 509 microseconds
+tt: 567 microseconds
+tt: 536 microseconds
+do the original copy, with hot disk cache
+tt: 399 microseconds
+tt: 397 microseconds
+tt: 434 microseconds
+tt: 435 microseconds
+tt: 408 microseconds
+
+
+copying file: file-8-M
+do copy with libAsyncOS, with hot disk cache
+tt: 3123 microseconds
+tt: 3086 microseconds
+tt: 3076 microseconds
+tt: 3106 microseconds
+tt: 3222 microseconds
+do the original copy, with hot disk cache
+tt: 3703 microseconds
+tt: 3796 microseconds
+tt: 3732 microseconds
+tt: 3781 microseconds
+tt: 3733 microseconds
+
+
+copying file: file-8-k
+do copy with libAsyncOS, with hot disk cache
+tt: 481 microseconds
+tt: 459 microseconds
+tt: 498 microseconds
+tt: 472 microseconds
+tt: 468 microseconds
+do the original copy, with hot disk cache
+tt: 383 microseconds
+tt: 406 microseconds
+tt: 402 microseconds
+tt: 440 microseconds
+tt: 402 microseconds
+
+
+
+
+
+
+test cold disk cache with block size: 512k
+copying file: file-1-M
+do copy with libAsyncOS, with cold disk cache
+tt: 124376 microseconds
+tt: 15292 microseconds
+tt: 14826 microseconds
+tt: 14960 microseconds
+tt: 12881 microseconds
+do the original copy, with cold disk cache
+tt: 101520 microseconds
+tt: 12571 microseconds
+tt: 15207 microseconds
+tt: 14690 microseconds
+tt: 14215 microseconds
+copying file: file-1-k
+do copy with libAsyncOS, with cold disk cache
+tt: 11259 microseconds
+tt: 11520 microseconds
+tt: 10023 microseconds
+tt: 10777 microseconds
+tt: 9589 microseconds
+do the original copy, with cold disk cache
+tt: 10164 microseconds
+tt: 12778 microseconds
+tt: 12346 microseconds
+tt: 11972 microseconds
+tt: 11621 microseconds
+copying file: file-128-M
+do copy with libAsyncOS, with cold disk cache
+tt: 718386 microseconds
+tt: 710118 microseconds
+tt: 718393 microseconds
+tt: 718456 microseconds
+tt: 710020 microseconds
+do the original copy, with cold disk cache
+tt: 709947 microseconds
+tt: 712843 microseconds
+tt: 718261 microseconds
+tt: 709957 microseconds
+tt: 718323 microseconds
+copying file: file-128-k
+do copy with libAsyncOS, with cold disk cache
+tt: 52198 microseconds
+tt: 11433 microseconds
+tt: 11612 microseconds
+tt: 10206 microseconds
+tt: 12253 microseconds
+do the original copy, with cold disk cache
+tt: 74110 microseconds
+tt: 12109 microseconds
+tt: 11232 microseconds
+tt: 10650 microseconds
+tt: 10176 microseconds
+copying file: file-16-M
+do copy with libAsyncOS, with cold disk cache
+tt: 115323 microseconds
+tt: 106949 microseconds
+tt: 107032 microseconds
+tt: 115336 microseconds
+tt: 106981 microseconds
+do the original copy, with cold disk cache
+tt: 198668 microseconds
+tt: 115289 microseconds
+tt: 115291 microseconds
+tt: 106942 microseconds
+tt: 106930 microseconds
+copying file: file-16-k
+do copy with libAsyncOS, with cold disk cache
+tt: 5819 microseconds
+tt: 9872 microseconds
+tt: 13037 microseconds
+tt: 12326 microseconds
+tt: 12328 microseconds
+do the original copy, with cold disk cache
+tt: 11896 microseconds
+tt: 11926 microseconds
+tt: 11419 microseconds
+tt: 10959 microseconds
+tt: 12051 microseconds
+copying file: file-2-M
+do copy with libAsyncOS, with cold disk cache
+tt: 41846 microseconds
+tt: 15817 microseconds
+tt: 33494 microseconds
+tt: 16097 microseconds
+tt: 25172 microseconds
+do the original copy, with cold disk cache
+tt: 14820 microseconds
+tt: 41846 microseconds
+tt: 17627 microseconds
+tt: 25169 microseconds
+tt: 15143 microseconds
+copying file: file-2-k
+do copy with libAsyncOS, with cold disk cache
+tt: 11641 microseconds
+tt: 10149 microseconds
+tt: 12683 microseconds
+tt: 11690 microseconds
+tt: 12550 microseconds
+do the original copy, with cold disk cache
+tt: 11654 microseconds
+tt: 11551 microseconds
+tt: 11079 microseconds
+tt: 10467 microseconds
+tt: 10367 microseconds
+copying file: file-256-M
+do copy with libAsyncOS, with cold disk cache
+tt: 1394847 microseconds
+tt: 1394989 microseconds
+tt: 1453217 microseconds
+tt: 1394852 microseconds
+tt: 1394838 microseconds
+do the original copy, with cold disk cache
+tt: 1394826 microseconds
+tt: 1394820 microseconds
+tt: 1394822 microseconds
+tt: 1394828 microseconds
+tt: 1394825 microseconds
+copying file: file-256-k
+do copy with libAsyncOS, with cold disk cache
+tt: 21045 microseconds
+tt: 11224 microseconds
+tt: 9739 microseconds
+tt: 10546 microseconds
+tt: 12920 microseconds
+do the original copy, with cold disk cache
+tt: 66208 microseconds
+tt: 11414 microseconds
+tt: 10298 microseconds
+tt: 9802 microseconds
+tt: 13051 microseconds
+copying file: file-32-M
+do copy with libAsyncOS, with cold disk cache
+tt: 188063 microseconds
+tt: 188143 microseconds
+tt: 188058 microseconds
+tt: 188205 microseconds
+tt: 188071 microseconds
+do the original copy, with cold disk cache
+tt: 254718 microseconds
+tt: 188017 microseconds
+tt: 188021 microseconds
+tt: 188001 microseconds
+tt: 194968 microseconds
+copying file: file-32-k
+do copy with libAsyncOS, with cold disk cache
+tt: 17892 microseconds
+tt: 12378 microseconds
+tt: 10591 microseconds
+tt: 10763 microseconds
+tt: 10008 microseconds
+do the original copy, with cold disk cache
+tt: 66285 microseconds
+tt: 10180 microseconds
+tt: 9239 microseconds
+tt: 12218 microseconds
+tt: 10000 microseconds
+copying file: file-4-M
+do copy with libAsyncOS, with cold disk cache
+tt: 37294 microseconds
+tt: 37156 microseconds
+tt: 37170 microseconds
+tt: 37147 microseconds
+tt: 37155 microseconds
+do the original copy, with cold disk cache
+tt: 137256 microseconds
+tt: 54722 microseconds
+tt: 37136 microseconds
+tt: 46423 microseconds
+tt: 37165 microseconds
+copying file: file-4-k
+do copy with libAsyncOS, with cold disk cache
+tt: 12077 microseconds
+tt: 11349 microseconds
+tt: 11050 microseconds
+tt: 11235 microseconds
+tt: 10260 microseconds
+do the original copy, with cold disk cache
+tt: 10831 microseconds
+tt: 11704 microseconds
+tt: 12793 microseconds
+tt: 12416 microseconds
+tt: 12324 microseconds
+copying file: file-512-M
+do copy with libAsyncOS, with cold disk cache
+tt: 2775985 microseconds
+tt: 2776013 microseconds
+tt: 2776166 microseconds
+tt: 2776017 microseconds
+tt: 2859475 microseconds
+do the original copy, with cold disk cache
+tt: 2867787 microseconds
+tt: 2776086 microseconds
+tt: 2775956 microseconds
+tt: 2775971 microseconds
+tt: 2775990 microseconds
+copying file: file-512-k
+do copy with libAsyncOS, with cold disk cache
+tt: 74645 microseconds
+tt: 11752 microseconds
+tt: 12770 microseconds
+tt: 13011 microseconds
+tt: 13853 microseconds
+do the original copy, with cold disk cache
+tt: 74660 microseconds
+tt: 13385 microseconds
+tt: 10681 microseconds
+tt: 11771 microseconds
+tt: 11337 microseconds
+copying file: file-64-M
+do copy with libAsyncOS, with cold disk cache
+tt: 395808 microseconds
+tt: 370909 microseconds
+tt: 362407 microseconds
+tt: 362531 microseconds
+tt: 362525 microseconds
+do the original copy, with cold disk cache
+tt: 454093 microseconds
+tt: 362481 microseconds
+tt: 362423 microseconds
+tt: 362404 microseconds
+tt: 362634 microseconds
+copying file: file-64-k
+do copy with libAsyncOS, with cold disk cache
+tt: 18225 microseconds
+tt: 10592 microseconds
+tt: 12372 microseconds
+tt: 9735 microseconds
+tt: 9567 microseconds
+do the original copy, with cold disk cache
+tt: 74263 microseconds
+tt: 12444 microseconds
+tt: 10035 microseconds
+tt: 11937 microseconds
+tt: 9969 microseconds
+copying file: file-8-M
+do copy with libAsyncOS, with cold disk cache
+tt: 60990 microseconds
+tt: 60984 microseconds
+tt: 60993 microseconds
+tt: 61003 microseconds
+tt: 61134 microseconds
+do the original copy, with cold disk cache
+tt: 160992 microseconds
+tt: 61096 microseconds
+tt: 60987 microseconds
+tt: 60950 microseconds
+tt: 60935 microseconds
+copying file: file-8-k
+do copy with libAsyncOS, with cold disk cache
+tt: 12887 microseconds
+tt: 5399 microseconds
+tt: 10956 microseconds
+tt: 10247 microseconds
+tt: 12114 microseconds
+do the original copy, with cold disk cache
+tt: 12750 microseconds
+tt: 10738 microseconds
+tt: 12035 microseconds
+tt: 6042 microseconds
+tt: 11780 microseconds
+
+
+
+
