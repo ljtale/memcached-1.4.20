@@ -5,8 +5,18 @@ then
 	echo "usage ./cp_test.sh <hot/cold> <block size>"
 	exit
 fi
-for filename in file-*
+#overhead of cp_enable
+echo "Overhead of cp enable:"
+for(( c = 0; c < 5; c = c + 1))
 do
+	./cp_enable
+done
+echo ""
+echo ""
+filesize=( 1-k 2-k 4-k 8-k 16-k 32-k 64-k 128-k 256-k 512-k 1-M 2-M 4-M 8-M 16-M 32-M 64-M 128-M 256-M 512-M )
+for((order = 0; order < 20; order = order + 1))
+do
+	filename=file-${filesize[$order]}
 	echo "copying file: $filename"
 	if [ $1 == hot ]
 	then
@@ -35,6 +45,7 @@ do
 		echo ""
 		echo ""
 
+: <<'END'
 	elif [ $1 == cold ]
 	then
 		echo "do copy with libAsyncOS, with cold disk cache"
@@ -74,5 +85,6 @@ do
 	else
 		echo "usage ./cp_test.sh <hot/cold> <block size> "
 		exit
+END
 	fi
 done

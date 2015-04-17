@@ -85,12 +85,12 @@ int main(int argc, char **argv)
 		}
 		idx++;
 	}
-
-	if (idx == argc) {
+	/* there is no argument, used to test the overhead of this enable program*/
+	/*if (idx == argc) {
 		fprintf(stderr, "%s [--nolog] [--log <file>] <prog> [opts..]\n", argv[0]);
 		exit(1);
 	}
-
+	*/
 
 //	echo(P"enable", 0);
 //	echo(P"trace", 0); /* kill the trace */
@@ -108,23 +108,20 @@ int main(int argc, char **argv)
 		if (sched_setaffinity(getpid(), sizeof(cpuset), &cpuset)) {
 			perror("failed setting affinity");
 		}
-/*
-		echo(P"filter", getpid());
-		echo(P"enable", enable);
-*/
-		if (execvp(argv[idx], &argv[idx])) {
-			perror("exec() failed");
+		if(argc > 1){
+			if (execvp(argv[idx], &argv[idx])) {
+				perror("exec() failed");
+				exit(1);
+			}
+		}
+		else{
 			exit(1);
 		}
 	}
 	waitpid(pid, &st, 0);
-//	echo(P"enable", 0);
+
 	gettimeofday(&t2, NULL);
-/*
-	if (trace_fd >= 0) {
-		cat(P"trace", trace_fd);
-	}
-*/
+	
 	timersub(&t2, &t1, &tt);
 	fprintf(stderr, "tt: %llu microseconds\n", (unsigned long long)tt.tv_sec * 1000ULL*1000ULL + tt.tv_usec);
 	return 0;
