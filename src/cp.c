@@ -21,6 +21,7 @@
 #include <sys/types.h>
 #include <getopt.h>
 #include <selinux/selinux.h>
+#include <sys/time.h>
 
 #include "system.h"
 #include "argmatch.h"
@@ -920,6 +921,8 @@ decode_preserve_arg (char const *arg, struct cp_options *x, bool on_off)
 int
 main (int argc, char **argv)
 {
+  struct timeval t1, t2, tt;
+  gettimeofday(&t1, NULL);
   int c;
   bool ok;
   bool make_backups = false;
@@ -1221,6 +1224,8 @@ main (int argc, char **argv)
                 target_directory, no_target_directory, &x);
 
   forget_all ();
-
+  gettimeofday(&t2, NULL);
+  timersub(&t2, &t1, &tt);
+  fprintf(stderr, "async-cp: %llu us\n", (unsigned long long)tt.tv_sec * 1000ULL*1000ULL + tt.tv_usec);
   exit (ok ? EXIT_SUCCESS : EXIT_FAILURE);
 }
