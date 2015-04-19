@@ -205,8 +205,7 @@ int main(int argc, char **argv){
 	for(i = 0; i < fsz.size(); i++){
 		cout << "writing fsz: " << fsz[i] << endl;
 		fout << fsz[i];
-		for(j = 7; j < 8/*bsz.size()*/; j++){
-			cout << odata[j].size()<< endl;
+		for(j = 7; j < bsz.size(); j++){
 			fout << "\t\t " << setprecision(3) << odata[j][i].speedup << " \t " << setprecision(3) << odata[j][i].speedup_s << " ";
 		}
 		fout << endl;
