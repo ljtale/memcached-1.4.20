@@ -1,0 +1,1485 @@
+Overhead of worker threads, we can use this data as a possible reference:
+asyncos_overhead start...
+tt: 7083 microseconds
+tt: 212 microseconds
+tt: 176 microseconds
+tt: 245 microseconds
+tt: 242 microseconds
+tt: 238 microseconds
+tt: 102 microseconds
+tt: 186 microseconds
+tt: 112 microseconds
+tt: 105 microseconds
+tt: 95 microseconds
+tt: 80 microseconds
+tt: 95 microseconds
+tt: 94 microseconds
+tt: 102 microseconds
+tt: 103 microseconds
+tt: 104 microseconds
+tt: 87 microseconds
+tt: 74 microseconds
+tt: 73 microseconds
+asyncos_overhead end...
+
+
+file_size:0
+filename: file-1-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 12605 us
+async-cp: 232 us
+async-cp: 236 us
+async-cp: 202 us
+async-cp: 216 us
+async-cp: 273 us
+async-cp: 326 us
+async-cp: 322 us
+async-cp: 173 us
+async-cp: 164 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 164 us
+async-cp: 156 us
+async-cp: 117 us
+async-cp: 165 us
+async-cp: 161 us
+async-cp: 161 us
+async-cp: 135 us
+async-cp: 154 us
+async-cp: 153 us
+async-cp: 158 us
+async-cp: 152 us
+async-cp: 154 us
+async-cp: 153 us
+async-cp: 165 us
+async-cp: 147 us
+async-cp: 148 us
+async-cp: 150 us
+async-cp: 161 us
+async-cp: 141 us
+async-cp: 150 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 78 us
+original-cp: 75 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 75 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 75 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 75 us
+original-cp: 74 us
+
+file_size:1
+filename: file-2-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 7777 us
+async-cp: 166 us
+async-cp: 168 us
+async-cp: 166 us
+async-cp: 158 us
+async-cp: 160 us
+async-cp: 147 us
+async-cp: 160 us
+async-cp: 152 us
+async-cp: 152 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 149 us
+async-cp: 149 us
+async-cp: 148 us
+async-cp: 155 us
+async-cp: 152 us
+async-cp: 151 us
+async-cp: 157 us
+async-cp: 126 us
+async-cp: 149 us
+async-cp: 147 us
+async-cp: 167 us
+async-cp: 152 us
+async-cp: 151 us
+async-cp: 154 us
+async-cp: 191 us
+async-cp: 253 us
+async-cp: 166 us
+async-cp: 161 us
+async-cp: 151 us
+async-cp: 150 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 75 us
+original-cp: 74 us
+original-cp: 75 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 72 us
+original-cp: 75 us
+original-cp: 75 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 73 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 73 us
+original-cp: 73 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+
+file_size:2
+filename: file-4-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 452 us
+async-cp: 169 us
+async-cp: 182 us
+async-cp: 171 us
+async-cp: 153 us
+async-cp: 143 us
+async-cp: 179 us
+async-cp: 152 us
+async-cp: 154 us
+async-cp: 158 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 152 us
+async-cp: 139 us
+async-cp: 151 us
+async-cp: 153 us
+async-cp: 139 us
+async-cp: 152 us
+async-cp: 150 us
+async-cp: 148 us
+async-cp: 141 us
+async-cp: 149 us
+async-cp: 147 us
+async-cp: 149 us
+async-cp: 164 us
+async-cp: 150 us
+async-cp: 148 us
+async-cp: 177 us
+async-cp: 150 us
+async-cp: 151 us
+async-cp: 150 us
+async-cp: 136 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 76 us
+original-cp: 75 us
+original-cp: 74 us
+original-cp: 75 us
+original-cp: 75 us
+original-cp: 73 us
+original-cp: 75 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 74 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 75 us
+original-cp: 75 us
+original-cp: 73 us
+original-cp: 75 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 74 us
+original-cp: 73 us
+original-cp: 75 us
+original-cp: 74 us
+original-cp: 73 us
+
+file_size:3
+filename: file-8-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 254 us
+async-cp: 169 us
+async-cp: 170 us
+async-cp: 157 us
+async-cp: 158 us
+async-cp: 156 us
+async-cp: 145 us
+async-cp: 168 us
+async-cp: 156 us
+async-cp: 155 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 136 us
+async-cp: 220 us
+async-cp: 154 us
+async-cp: 155 us
+async-cp: 156 us
+async-cp: 145 us
+async-cp: 155 us
+async-cp: 152 us
+async-cp: 155 us
+async-cp: 139 us
+async-cp: 153 us
+async-cp: 150 us
+async-cp: 152 us
+async-cp: 142 us
+async-cp: 152 us
+async-cp: 154 us
+async-cp: 152 us
+async-cp: 168 us
+async-cp: 152 us
+async-cp: 152 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 82 us
+original-cp: 77 us
+original-cp: 76 us
+original-cp: 77 us
+original-cp: 76 us
+original-cp: 77 us
+original-cp: 76 us
+original-cp: 76 us
+original-cp: 77 us
+original-cp: 76 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 76 us
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 76 us
+original-cp: 81 us
+original-cp: 76 us
+original-cp: 76 us
+original-cp: 76 us
+original-cp: 76 us
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 76 us
+original-cp: 77 us
+original-cp: 77 us
+original-cp: 76 us
+
+file_size:4
+filename: file-16-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 355 us
+async-cp: 176 us
+async-cp: 173 us
+async-cp: 162 us
+async-cp: 163 us
+async-cp: 173 us
+async-cp: 171 us
+async-cp: 174 us
+async-cp: 151 us
+async-cp: 159 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 160 us
+async-cp: 144 us
+async-cp: 137 us
+async-cp: 156 us
+async-cp: 156 us
+async-cp: 153 us
+async-cp: 196 us
+async-cp: 155 us
+async-cp: 135 us
+async-cp: 153 us
+async-cp: 150 us
+async-cp: 156 us
+async-cp: 156 us
+async-cp: 156 us
+async-cp: 132 us
+async-cp: 154 us
+async-cp: 155 us
+async-cp: 155 us
+async-cp: 155 us
+async-cp: 154 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 82 us
+original-cp: 81 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 79 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 81 us
+original-cp: 80 us
+original-cp: 79 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 81 us
+original-cp: 81 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 79 us
+original-cp: 80 us
+original-cp: 80 us
+original-cp: 79 us
+original-cp: 81 us
+original-cp: 79 us
+original-cp: 81 us
+original-cp: 81 us
+original-cp: 79 us
+original-cp: 80 us
+original-cp: 80 us
+
+file_size:5
+filename: file-32-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 8896 us
+async-cp: 185 us
+async-cp: 180 us
+async-cp: 178 us
+async-cp: 170 us
+async-cp: 175 us
+async-cp: 160 us
+async-cp: 170 us
+async-cp: 168 us
+async-cp: 166 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 168 us
+async-cp: 169 us
+async-cp: 172 us
+async-cp: 143 us
+async-cp: 145 us
+async-cp: 193 us
+async-cp: 163 us
+async-cp: 169 us
+async-cp: 162 us
+async-cp: 162 us
+async-cp: 162 us
+async-cp: 166 us
+async-cp: 154 us
+async-cp: 165 us
+async-cp: 161 us
+async-cp: 163 us
+async-cp: 197 us
+async-cp: 172 us
+async-cp: 174 us
+async-cp: 181 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 92 us
+original-cp: 88 us
+original-cp: 89 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 90 us
+original-cp: 87 us
+original-cp: 92 us
+original-cp: 87 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 89 us
+original-cp: 89 us
+original-cp: 88 us
+original-cp: 89 us
+original-cp: 89 us
+original-cp: 92 us
+original-cp: 89 us
+original-cp: 87 us
+original-cp: 89 us
+original-cp: 89 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+original-cp: 88 us
+
+file_size:6
+filename: file-64-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 598 us
+async-cp: 196 us
+async-cp: 196 us
+async-cp: 179 us
+async-cp: 162 us
+async-cp: 174 us
+async-cp: 326 us
+async-cp: 189 us
+async-cp: 197 us
+async-cp: 190 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 170 us
+async-cp: 181 us
+async-cp: 178 us
+async-cp: 217 us
+async-cp: 189 us
+async-cp: 187 us
+async-cp: 191 us
+async-cp: 171 us
+async-cp: 181 us
+async-cp: 173 us
+async-cp: 179 us
+async-cp: 175 us
+async-cp: 173 us
+async-cp: 171 us
+async-cp: 182 us
+async-cp: 179 us
+async-cp: 180 us
+async-cp: 173 us
+async-cp: 177 us
+async-cp: 194 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 102 us
+original-cp: 99 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 97 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 97 us
+original-cp: 99 us
+original-cp: 97 us
+original-cp: 97 us
+original-cp: 98 us
+original-cp: 97 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 97 us
+original-cp: 98 us
+original-cp: 98 us
+original-cp: 97 us
+original-cp: 98 us
+original-cp: 97 us
+original-cp: 98 us
+
+file_size:7
+filename: file-128-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 572 us
+async-cp: 214 us
+async-cp: 214 us
+async-cp: 201 us
+async-cp: 289 us
+async-cp: 214 us
+async-cp: 211 us
+async-cp: 211 us
+async-cp: 198 us
+async-cp: 194 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 198 us
+async-cp: 206 us
+async-cp: 209 us
+async-cp: 209 us
+async-cp: 174 us
+async-cp: 195 us
+async-cp: 200 us
+async-cp: 199 us
+async-cp: 205 us
+async-cp: 208 us
+async-cp: 209 us
+async-cp: 189 us
+async-cp: 199 us
+async-cp: 185 us
+async-cp: 197 us
+async-cp: 194 us
+async-cp: 195 us
+async-cp: 195 us
+async-cp: 193 us
+async-cp: 209 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 122 us
+original-cp: 122 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 118 us
+original-cp: 119 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 120 us
+original-cp: 121 us
+original-cp: 120 us
+original-cp: 119 us
+original-cp: 120 us
+original-cp: 119 us
+original-cp: 120 us
+original-cp: 121 us
+original-cp: 120 us
+original-cp: 120 us
+original-cp: 119 us
+original-cp: 120 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 119 us
+original-cp: 120 us
+original-cp: 119 us
+
+file_size:8
+filename: file-256-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 903 us
+async-cp: 326 us
+async-cp: 251 us
+async-cp: 252 us
+async-cp: 251 us
+async-cp: 233 us
+async-cp: 237 us
+async-cp: 227 us
+async-cp: 237 us
+async-cp: 236 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 225 us
+async-cp: 235 us
+async-cp: 235 us
+async-cp: 236 us
+async-cp: 235 us
+async-cp: 209 us
+async-cp: 237 us
+async-cp: 222 us
+async-cp: 229 us
+async-cp: 233 us
+async-cp: 250 us
+async-cp: 236 us
+async-cp: 232 us
+async-cp: 235 us
+async-cp: 245 us
+async-cp: 234 us
+async-cp: 234 us
+async-cp: 232 us
+async-cp: 244 us
+async-cp: 268 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 160 us
+original-cp: 157 us
+original-cp: 158 us
+original-cp: 160 us
+original-cp: 159 us
+original-cp: 158 us
+original-cp: 158 us
+original-cp: 159 us
+original-cp: 157 us
+original-cp: 158 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 157 us
+original-cp: 157 us
+original-cp: 159 us
+original-cp: 157 us
+original-cp: 158 us
+original-cp: 159 us
+original-cp: 157 us
+original-cp: 157 us
+original-cp: 157 us
+original-cp: 160 us
+original-cp: 159 us
+original-cp: 157 us
+original-cp: 158 us
+original-cp: 159 us
+original-cp: 161 us
+original-cp: 158 us
+original-cp: 158 us
+original-cp: 157 us
+original-cp: 157 us
+original-cp: 161 us
+
+file_size:9
+filename: file-512-k
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 1621 us
+async-cp: 326 us
+async-cp: 320 us
+async-cp: 310 us
+async-cp: 317 us
+async-cp: 323 us
+async-cp: 323 us
+async-cp: 323 us
+async-cp: 290 us
+async-cp: 311 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 312 us
+async-cp: 323 us
+async-cp: 321 us
+async-cp: 322 us
+async-cp: 295 us
+async-cp: 317 us
+async-cp: 317 us
+async-cp: 310 us
+async-cp: 313 us
+async-cp: 311 us
+async-cp: 313 us
+async-cp: 310 us
+async-cp: 298 us
+async-cp: 320 us
+async-cp: 310 us
+async-cp: 307 us
+async-cp: 306 us
+async-cp: 308 us
+async-cp: 305 us
+async-cp: 328 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 238 us
+original-cp: 235 us
+original-cp: 235 us
+original-cp: 235 us
+original-cp: 235 us
+original-cp: 236 us
+original-cp: 234 us
+original-cp: 234 us
+original-cp: 234 us
+original-cp: 235 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 234 us
+original-cp: 234 us
+original-cp: 235 us
+original-cp: 236 us
+original-cp: 235 us
+original-cp: 236 us
+original-cp: 235 us
+original-cp: 234 us
+original-cp: 236 us
+original-cp: 235 us
+original-cp: 235 us
+original-cp: 233 us
+original-cp: 235 us
+original-cp: 235 us
+original-cp: 233 us
+original-cp: 235 us
+original-cp: 241 us
+original-cp: 235 us
+original-cp: 234 us
+original-cp: 234 us
+
+file_size:10
+filename: file-1-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 13071 us
+async-cp: 637 us
+async-cp: 478 us
+async-cp: 473 us
+async-cp: 480 us
+async-cp: 459 us
+async-cp: 469 us
+async-cp: 445 us
+async-cp: 454 us
+async-cp: 453 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 535 us
+async-cp: 470 us
+async-cp: 451 us
+async-cp: 470 us
+async-cp: 462 us
+async-cp: 491 us
+async-cp: 464 us
+async-cp: 461 us
+async-cp: 460 us
+async-cp: 454 us
+async-cp: 558 us
+async-cp: 458 us
+async-cp: 448 us
+async-cp: 491 us
+async-cp: 462 us
+async-cp: 450 us
+async-cp: 432 us
+async-cp: 456 us
+async-cp: 441 us
+async-cp: 458 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 429 us
+original-cp: 391 us
+original-cp: 391 us
+original-cp: 401 us
+original-cp: 397 us
+original-cp: 397 us
+original-cp: 393 us
+original-cp: 393 us
+original-cp: 404 us
+original-cp: 391 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 389 us
+original-cp: 389 us
+original-cp: 394 us
+original-cp: 393 us
+original-cp: 394 us
+original-cp: 391 us
+original-cp: 397 us
+original-cp: 390 us
+original-cp: 391 us
+original-cp: 390 us
+original-cp: 391 us
+original-cp: 388 us
+original-cp: 396 us
+original-cp: 393 us
+original-cp: 393 us
+original-cp: 392 us
+original-cp: 393 us
+original-cp: 391 us
+original-cp: 422 us
+original-cp: 405 us
+
+file_size:11
+filename: file-2-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 15712 us
+async-cp: 932 us
+async-cp: 890 us
+async-cp: 906 us
+async-cp: 888 us
+async-cp: 856 us
+async-cp: 776 us
+async-cp: 763 us
+async-cp: 846 us
+async-cp: 758 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 746 us
+async-cp: 761 us
+async-cp: 779 us
+async-cp: 758 us
+async-cp: 773 us
+async-cp: 770 us
+async-cp: 750 us
+async-cp: 760 us
+async-cp: 757 us
+async-cp: 753 us
+async-cp: 761 us
+async-cp: 759 us
+async-cp: 875 us
+async-cp: 772 us
+async-cp: 767 us
+async-cp: 752 us
+async-cp: 759 us
+async-cp: 749 us
+async-cp: 758 us
+async-cp: 769 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 748 us
+original-cp: 730 us
+original-cp: 730 us
+original-cp: 718 us
+original-cp: 732 us
+original-cp: 738 us
+original-cp: 735 us
+original-cp: 726 us
+original-cp: 723 us
+original-cp: 717 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 730 us
+original-cp: 738 us
+original-cp: 733 us
+original-cp: 726 us
+original-cp: 731 us
+original-cp: 714 us
+original-cp: 726 us
+original-cp: 736 us
+original-cp: 733 us
+original-cp: 724 us
+original-cp: 725 us
+original-cp: 716 us
+original-cp: 726 us
+original-cp: 743 us
+original-cp: 730 us
+original-cp: 726 us
+original-cp: 727 us
+original-cp: 720 us
+original-cp: 723 us
+original-cp: 748 us
+
+file_size:12
+filename: file-4-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 24932 us
+async-cp: 1400 us
+async-cp: 1422 us
+async-cp: 1446 us
+async-cp: 1366 us
+async-cp: 1393 us
+async-cp: 1379 us
+async-cp: 1382 us
+async-cp: 1381 us
+async-cp: 1393 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 1383 us
+async-cp: 1371 us
+async-cp: 1393 us
+async-cp: 1385 us
+async-cp: 1488 us
+async-cp: 1398 us
+async-cp: 1385 us
+async-cp: 1367 us
+async-cp: 1398 us
+async-cp: 1416 us
+async-cp: 1395 us
+async-cp: 1535 us
+async-cp: 1531 us
+async-cp: 1532 us
+async-cp: 1360 us
+async-cp: 1398 us
+async-cp: 1388 us
+async-cp: 1378 us
+async-cp: 1388 us
+async-cp: 1414 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 1467 us
+original-cp: 1437 us
+original-cp: 1472 us
+original-cp: 1433 us
+original-cp: 1437 us
+original-cp: 1445 us
+original-cp: 1442 us
+original-cp: 1450 us
+original-cp: 1425 us
+original-cp: 1461 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 1450 us
+original-cp: 1445 us
+original-cp: 1439 us
+original-cp: 1435 us
+original-cp: 1444 us
+original-cp: 1438 us
+original-cp: 1461 us
+original-cp: 1434 us
+original-cp: 1494 us
+original-cp: 1456 us
+original-cp: 1434 us
+original-cp: 1447 us
+original-cp: 1422 us
+original-cp: 1451 us
+original-cp: 1431 us
+original-cp: 1434 us
+original-cp: 1448 us
+original-cp: 1421 us
+original-cp: 1460 us
+original-cp: 1432 us
+
+file_size:13
+filename: file-8-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 48869 us
+async-cp: 2772 us
+async-cp: 2679 us
+async-cp: 2762 us
+async-cp: 2740 us
+async-cp: 2750 us
+async-cp: 2615 us
+async-cp: 2641 us
+async-cp: 2642 us
+async-cp: 2646 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 2636 us
+async-cp: 2678 us
+async-cp: 2645 us
+async-cp: 2602 us
+async-cp: 2627 us
+async-cp: 2617 us
+async-cp: 2606 us
+async-cp: 2800 us
+async-cp: 2755 us
+async-cp: 2677 us
+async-cp: 2640 us
+async-cp: 2648 us
+async-cp: 2618 us
+async-cp: 2654 us
+async-cp: 2640 us
+async-cp: 2637 us
+async-cp: 2621 us
+async-cp: 2627 us
+async-cp: 2607 us
+async-cp: 2644 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 3047 us
+original-cp: 3040 us
+original-cp: 3010 us
+original-cp: 3011 us
+original-cp: 3019 us
+original-cp: 3011 us
+original-cp: 3016 us
+original-cp: 3203 us
+original-cp: 3234 us
+original-cp: 3205 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 3211 us
+original-cp: 3178 us
+original-cp: 3200 us
+original-cp: 3178 us
+original-cp: 3093 us
+original-cp: 3201 us
+original-cp: 3186 us
+original-cp: 3203 us
+original-cp: 3220 us
+original-cp: 3210 us
+original-cp: 3069 us
+original-cp: 3067 us
+original-cp: 3045 us
+original-cp: 3177 us
+original-cp: 3122 us
+original-cp: 3212 us
+original-cp: 3187 us
+original-cp: 3175 us
+original-cp: 3181 us
+original-cp: 3183 us
+
+file_size:14
+filename: file-16-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 92909 us
+async-cp: 5297 us
+async-cp: 5228 us
+async-cp: 5156 us
+async-cp: 5101 us
+async-cp: 5084 us
+async-cp: 5126 us
+async-cp: 5112 us
+async-cp: 5096 us
+async-cp: 5100 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 5073 us
+async-cp: 5056 us
+async-cp: 5128 us
+async-cp: 5090 us
+async-cp: 5085 us
+async-cp: 5097 us
+async-cp: 5089 us
+async-cp: 5100 us
+async-cp: 5113 us
+async-cp: 5091 us
+async-cp: 5081 us
+async-cp: 5085 us
+async-cp: 5076 us
+async-cp: 5081 us
+async-cp: 5090 us
+async-cp: 5085 us
+async-cp: 5115 us
+async-cp: 5086 us
+async-cp: 5099 us
+async-cp: 5126 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 6150 us
+original-cp: 6136 us
+original-cp: 6154 us
+original-cp: 6128 us
+original-cp: 6166 us
+original-cp: 6140 us
+original-cp: 6164 us
+original-cp: 6206 us
+original-cp: 6127 us
+original-cp: 6161 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 6159 us
+original-cp: 6153 us
+original-cp: 6148 us
+original-cp: 6157 us
+original-cp: 6155 us
+original-cp: 6156 us
+original-cp: 6171 us
+original-cp: 6155 us
+original-cp: 6156 us
+original-cp: 6130 us
+original-cp: 6148 us
+original-cp: 6151 us
+original-cp: 6141 us
+original-cp: 6156 us
+original-cp: 6164 us
+original-cp: 6139 us
+original-cp: 6135 us
+original-cp: 6138 us
+original-cp: 6149 us
+original-cp: 6156 us
+
+file_size:15
+filename: file-32-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 178737 us
+async-cp: 10100 us
+async-cp: 10097 us
+async-cp: 10115 us
+async-cp: 10092 us
+async-cp: 10087 us
+async-cp: 10087 us
+async-cp: 10075 us
+async-cp: 10102 us
+async-cp: 10087 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 10101 us
+async-cp: 10088 us
+async-cp: 10102 us
+async-cp: 10067 us
+async-cp: 10075 us
+async-cp: 10112 us
+async-cp: 10294 us
+async-cp: 10227 us
+async-cp: 10151 us
+async-cp: 10077 us
+async-cp: 10101 us
+async-cp: 10053 us
+async-cp: 10098 us
+async-cp: 10085 us
+async-cp: 10118 us
+async-cp: 10084 us
+async-cp: 10130 us
+async-cp: 10092 us
+async-cp: 10084 us
+async-cp: 10081 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 12406 us
+original-cp: 12375 us
+original-cp: 12388 us
+original-cp: 12407 us
+original-cp: 12399 us
+original-cp: 12399 us
+original-cp: 12385 us
+original-cp: 12413 us
+original-cp: 12424 us
+original-cp: 12385 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 12391 us
+original-cp: 12411 us
+original-cp: 12400 us
+original-cp: 12423 us
+original-cp: 12419 us
+original-cp: 12412 us
+original-cp: 12403 us
+original-cp: 12390 us
+original-cp: 12415 us
+original-cp: 12401 us
+original-cp: 12405 us
+original-cp: 12387 us
+original-cp: 12486 us
+original-cp: 12410 us
+original-cp: 12393 us
+original-cp: 12394 us
+original-cp: 12374 us
+original-cp: 12418 us
+original-cp: 12372 us
+original-cp: 12435 us
+
+file_size:16
+filename: file-64-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 361234 us
+async-cp: 20356 us
+async-cp: 20118 us
+async-cp: 20230 us
+async-cp: 20247 us
+async-cp: 20168 us
+async-cp: 20221 us
+async-cp: 20246 us
+async-cp: 20171 us
+async-cp: 20259 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 20206 us
+async-cp: 20204 us
+async-cp: 20258 us
+async-cp: 20231 us
+async-cp: 20225 us
+async-cp: 20216 us
+async-cp: 20196 us
+async-cp: 20226 us
+async-cp: 20179 us
+async-cp: 20224 us
+async-cp: 20193 us
+async-cp: 20248 us
+async-cp: 20223 us
+async-cp: 20261 us
+async-cp: 20213 us
+async-cp: 20215 us
+async-cp: 20216 us
+async-cp: 20255 us
+async-cp: 20217 us
+async-cp: 20215 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 25324 us
+original-cp: 25293 us
+original-cp: 25319 us
+original-cp: 25326 us
+original-cp: 25253 us
+original-cp: 25273 us
+original-cp: 25310 us
+original-cp: 25294 us
+original-cp: 25299 us
+original-cp: 25290 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 25300 us
+original-cp: 25279 us
+original-cp: 25285 us
+original-cp: 25327 us
+original-cp: 25326 us
+original-cp: 25318 us
+original-cp: 25311 us
+original-cp: 25308 us
+original-cp: 25342 us
+original-cp: 25312 us
+original-cp: 25351 us
+original-cp: 25284 us
+original-cp: 25329 us
+original-cp: 25337 us
+original-cp: 25307 us
+original-cp: 25406 us
+original-cp: 25301 us
+original-cp: 25304 us
+original-cp: 25293 us
+original-cp: 25370 us
+
+file_size:17
+filename: file-128-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 701877 us
+async-cp: 40430 us
+async-cp: 40373 us
+async-cp: 40352 us
+async-cp: 40319 us
+async-cp: 40356 us
+async-cp: 40359 us
+async-cp: 40534 us
+async-cp: 40319 us
+async-cp: 40366 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 40328 us
+async-cp: 40314 us
+async-cp: 40387 us
+async-cp: 40384 us
+async-cp: 40320 us
+async-cp: 40400 us
+async-cp: 40350 us
+async-cp: 40355 us
+async-cp: 40323 us
+async-cp: 40405 us
+async-cp: 40421 us
+async-cp: 40454 us
+async-cp: 40428 us
+async-cp: 40445 us
+async-cp: 40373 us
+async-cp: 40422 us
+async-cp: 40417 us
+async-cp: 40384 us
+async-cp: 40361 us
+async-cp: 40465 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 50726 us
+original-cp: 50658 us
+original-cp: 50651 us
+original-cp: 50643 us
+original-cp: 50645 us
+original-cp: 50732 us
+original-cp: 50629 us
+original-cp: 50642 us
+original-cp: 50693 us
+original-cp: 50690 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 50602 us
+original-cp: 50778 us
+original-cp: 50717 us
+original-cp: 50658 us
+original-cp: 50698 us
+original-cp: 50646 us
+original-cp: 50661 us
+original-cp: 50739 us
+original-cp: 50627 us
+original-cp: 50686 us
+original-cp: 50618 us
+original-cp: 50693 us
+original-cp: 50613 us
+original-cp: 50787 us
+original-cp: 50629 us
+original-cp: 50701 us
+original-cp: 50751 us
+original-cp: 50563 us
+original-cp: 50667 us
+original-cp: 50713 us
+
+file_size:18
+filename: file-256-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 1386972 us
+async-cp: 80810 us
+async-cp: 80582 us
+async-cp: 80474 us
+async-cp: 80652 us
+async-cp: 80491 us
+async-cp: 80633 us
+async-cp: 80645 us
+async-cp: 80752 us
+async-cp: 80764 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 80619 us
+async-cp: 80501 us
+async-cp: 80591 us
+async-cp: 80679 us
+async-cp: 80852 us
+async-cp: 80434 us
+async-cp: 80571 us
+async-cp: 80913 us
+async-cp: 80532 us
+async-cp: 80605 us
+async-cp: 80499 us
+async-cp: 80662 us
+async-cp: 80774 us
+async-cp: 80651 us
+async-cp: 80807 us
+async-cp: 80724 us
+async-cp: 80853 us
+async-cp: 80783 us
+async-cp: 80697 us
+async-cp: 80762 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 101102 us
+original-cp: 100740 us
+original-cp: 101122 us
+original-cp: 100676 us
+original-cp: 101390 us
+original-cp: 100707 us
+original-cp: 101034 us
+original-cp: 100932 us
+original-cp: 101017 us
+original-cp: 100586 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 101134 us
+original-cp: 100486 us
+original-cp: 101092 us
+original-cp: 100677 us
+original-cp: 101315 us
+original-cp: 100713 us
+original-cp: 101064 us
+original-cp: 100887 us
+original-cp: 101073 us
+original-cp: 100695 us
+original-cp: 101132 us
+original-cp: 100642 us
+original-cp: 101013 us
+original-cp: 100697 us
+original-cp: 101226 us
+original-cp: 100622 us
+original-cp: 101087 us
+original-cp: 100486 us
+original-cp: 101037 us
+original-cp: 100662 us
+
+file_size:19
+filename: file-512-M
+async_cp_hot: 
+repeating async copying 10 times starts...
+async-cp: 2767784 us
+async-cp: 161886 us
+async-cp: 160923 us
+async-cp: 160839 us
+async-cp: 160938 us
+async-cp: 161237 us
+async-cp: 160915 us
+async-cp: 160770 us
+async-cp: 160951 us
+async-cp: 161006 us
+repeating async copying 10 times ends...
+async_cp_hot actually starts...
+async-cp: 160969 us
+async-cp: 161333 us
+async-cp: 160711 us
+async-cp: 160821 us
+async-cp: 160789 us
+async-cp: 161050 us
+async-cp: 160588 us
+async-cp: 161247 us
+async-cp: 161081 us
+async-cp: 160730 us
+async-cp: 160828 us
+async-cp: 160813 us
+async-cp: 160906 us
+async-cp: 160689 us
+async-cp: 160979 us
+async-cp: 160904 us
+async-cp: 161199 us
+async-cp: 160584 us
+async-cp: 161267 us
+async-cp: 160655 us
+async_cp_hot ends...
+
+orig_cp_hot: 
+repeating orig copying 10 times starts...
+original-cp: 202477 us
+original-cp: 200193 us
+original-cp: 201857 us
+original-cp: 200569 us
+original-cp: 201855 us
+original-cp: 200433 us
+original-cp: 201927 us
+original-cp: 199967 us
+original-cp: 201918 us
+original-cp: 200564 us
+repeating orig copying 10 times ends...
+orig_cp_hot actually starts...
+original-cp: 202523 us
+original-cp: 200215 us
+original-cp: 202090 us
+original-cp: 200224 us
+original-cp: 202268 us
+original-cp: 200142 us
+original-cp: 202006 us
+original-cp: 200092 us
+original-cp: 202100 us
+original-cp: 200522 us
+original-cp: 202207 us
+original-cp: 200723 us
+original-cp: 202015 us
+original-cp: 200776 us
+original-cp: 202000 us
+original-cp: 200729 us
+original-cp: 202237 us
+original-cp: 201829 us
+original-cp: 203628 us
+original-cp: 201473 us
+
