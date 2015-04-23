@@ -10,7 +10,7 @@ fi
 #overhead of worker threads creation
 echo "Overhead of worker threads, we can use this data as a possible reference:"
 echo "asyncos_overhead start..."
-test_times=20
+test_times=40
 sleep_time=4
 
 for(( c = 0; c < test_times; c = c + 1))

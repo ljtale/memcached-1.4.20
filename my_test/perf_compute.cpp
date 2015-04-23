@@ -18,7 +18,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define TEST_TIMES 20
+#define TEST_TIMES 40
 #define BLOCK_SIZE_NUM 8
 #define FILE_SIZE_NUM 20
 
@@ -180,7 +180,7 @@ int main(int argc, char **argv){
 				cout << async_m << "  " << async_s << endl;
 				cout << orig_m << "  " << orig_s << endl;
 				float speedup = (orig_m - async_m) / async_m * 100;
-				float speedup_s = speedup * sqrt((async_s / async_m) * (async_s / async_m) + (orig_s / orig_m) * (orig_s / orig_m));
+				float speedup_s = abs(speedup) * sqrt((async_s /abs(async_m)) * (async_s / abs(async_m)) + (orig_s / abs(orig_m)) * (orig_s / abs(orig_m)));
 				struct spdup up;
 				up.speedup = speedup;
 				up.speedup_s = speedup_s;
@@ -199,16 +199,16 @@ int main(int argc, char **argv){
 		fin.close();
 	}/* for*/
 	ofstream fout(output.c_str());
-	fout << "#file size \t 4k-m \t 4k-s \t 8k-m \t 8k-s \t 16-m \t 16k-s \t 32k-m \t 32k-s \t 64k-m \t 64k-s \t 128k-m \t 128k-s \t 256k-m \t 256k-s \t 512k-m \t 512k-s\n";
+	fout << "#file size\t4k-m\t4k-s\t8k-m\t8k-s\t16-m\t16k-s\t32k-m\t32k-s\t64k-m\t64k-s\t128k-m\t128k-s\t256k-m\t256k-s\t512k-m\t512k-s\n";
 	unsigned long i, j;
-	cout << odata.size() << endl;
 	for(i = 0; i < fsz.size(); i++){
 		cout << "writing fsz: " << fsz[i] << endl;
-		fout << fsz[i];
-		for(j = 7; j < bsz.size(); j++){
-			fout << "\t\t " << setprecision(3) << odata[j][i].speedup << " \t " << setprecision(3) << odata[j][i].speedup_s << " ";
+		fout << "\"" << fsz[i] << "\"";
+		//fout << i;
+		for(j = 0; j < bsz.size(); j++){
+			fout << "\t" << setprecision(2) << fixed << odata[j][i].speedup << "\t" << setprecision(2) << fixed << odata[j][i].speedup_s << " ";
 		}
-		fout << endl;
+		fout << "\n";
 	}	
 	fout.close();
 	return 0;	
